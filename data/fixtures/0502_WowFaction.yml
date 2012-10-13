@@ -1,0 +1,7 @@
+WowFaction:
+  alliance:
+    name:        Alliance
+    armory_id:   0
+  horde:
+    name:        Horde
+    armory_id:   1

@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+.character_part_1{
+	clear: left;
+	float: left;
+	height: auto;
+	width: 444px;
+	font-size: 1.1em;
+	line-height: 25px;
+	padding-right: 83px;
+	padding-left: 83px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+.character_img_part {
+	float: left;
+	height: auto;
+	width: 321px;
+}
+
+.character_icon_column {
+	float: left;
+	height: auto;
+	width: 61px;
+}
+.character_icon_row_holder {
+	clear: left;
+	float: left;
+	height: auto;
+	width: auto;
+	padding-left: 80px;
+	padding-top: 10px;
+}
+.character_icon_row {
+	float: left;
+	height: auto;
+	width: 177px;
+	clear: left;
+}
+
+
+.character_icon_column td, .character_icon_row td {
+	height: 51px;
+	width: 51px;
+	
+}
+.character_icon_column td img, .character_icon_row td img {
+  float: left;
+}
+.character_ifrems {
+	float: left;
+	height: auto;
+	width: auto;
+	padding-bottom: 0px;
+  padding-top: 6px;
+}

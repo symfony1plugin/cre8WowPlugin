@@ -1,0 +1,192 @@
+WowClassSpec:
+
+  WowClassSpec_1_1:
+    wow_class_id:   WowClass_1
+    name:           Discipline
+    icon:           spell_holy_wordfortitude.png
+    armory_id:      treeOne
+    rank:           1
+  WowClassSpec_1_2:
+    wow_class_id:   WowClass_1
+    name:           Holy
+    icon:           spell_holy_guardianspirit.png
+    armory_id:      treeTwo
+    rank:           2
+  WowClassSpec_1_3:
+    wow_class_id:   WowClass_1
+    name:           Shadow
+    icon:           spell_shadow_shadowwordpain.png
+    armory_id:      treeThree
+    rank:           3
+
+  WowClassSpec_2_1:
+    wow_class_id:   WowClass_2
+    name:           Assassination
+    icon:           ability_rogue_eviscerate.png
+    armory_id:      treeOne
+    rank:           1
+  WowClassSpec_2_2:
+    wow_class_id:   WowClass_2
+    name:           Combat
+    icon:           ability_backstab.png
+    armory_id:      treeTwo
+    rank:           2
+  WowClassSpec_2_3:
+    wow_class_id:   WowClass_2
+    name:           Subtlety
+    icon:           ability_stealth.png
+    armory_id:      treeThree
+    rank:           3
+
+  WowClassSpec_3_1:
+    wow_class_id:   WowClass_3
+    name:           Arms
+    icon:           ability_rogue_eviscerate.png
+    armory_id:      treeOne
+    rank:           1
+  WowClassSpec_3_2:
+    wow_class_id:   WowClass_3
+    name:           Fury
+    icon:           ability_warrior_innerrage.png
+    armory_id:      treeTwo
+    rank:           2
+  WowClassSpec_3_3:
+    wow_class_id:   WowClass_3
+    name:           Protection
+    icon:           inv_shield_06.png
+    armory_id:      treeThree
+    rank:           3
+
+  WowClassSpec_4_1:
+    wow_class_id:   WowClass_4
+    name:           Arcane
+    icon:           spell_holy_magicalsentry.png
+    armory_id:      treeOne
+    rank:           1
+  WowClassSpec_4_2:
+    wow_class_id:   WowClass_4
+    name:           Fire
+    icon:           spell_fire_firebolt02.png
+    armory_id:      treeTwo
+    rank:           2
+  WowClassSpec_4_3:
+    wow_class_id:   WowClass_4
+    name:           Frost
+    icon:           spell_frost_frostbolt02.png
+    armory_id:      treeThree
+    rank:           3
+
+  WowClassSpec_5_1:
+    wow_class_id:   WowClass_5
+    name:           Balance
+    icon:           spell_nature_starfall.png
+    armory_id:      treeOne
+    rank:           1
+  WowClassSpec_5_2:
+    wow_class_id:   WowClass_5
+    name:           Feral Combat
+    icon:           ability_racial_bearform.png
+    armory_id:      treeTwo
+    rank:           2
+  WowClassSpec_5_3:
+    wow_class_id:   WowClass_5
+    name:           Restoration
+    icon:           spell_nature_healingtouch.png
+    armory_id:      treeThree
+    rank:           3
+
+  WowClassSpec_6_1:
+    wow_class_id:   WowClass_6
+    name:           Beast Mastery
+    icon:           ability_hunter_beasttaming.png
+    armory_id:      treeOne
+    rank:           1
+  WowClassSpec_6_2:
+    wow_class_id:   WowClass_6
+    name:           Marksmanship
+    icon:           ability_marksmanship.png
+    armory_id:      treeTwo
+    rank:           2
+  WowClassSpec_6_3:
+    wow_class_id:   WowClass_6
+    name:           Survival
+    icon:           ability_hunter_swiftstrike.png
+    armory_id:      treeThree
+    rank:           3
+
+  WowClassSpec_7_1:
+    wow_class_id:   WowClass_7
+    name:           Affliction
+    icon:           spell_shadow_deathcoil.png
+    armory_id:      treeOne
+    rank:           1
+  WowClassSpec_7_2:
+    wow_class_id:   WowClass_7
+    name:           Demonology
+    icon:           spell_shadow_metamorphosis.png
+    armory_id:      treeTwo
+    rank:           2
+  WowClassSpec_7_3:
+    wow_class_id:   WowClass_7
+    name:           Destruction
+    icon:           spell_shadow_rainoffire.png
+    armory_id:      treeThree
+    rank:           3
+
+  WowClassSpec_8_1:
+    wow_class_id:   WowClass_8
+    name:           Elemental
+    icon:           spell_nature_lightning.png
+    armory_id:      treeOne
+    rank:           1
+  WowClassSpec_8_2:
+    wow_class_id:   WowClass_8
+    name:           Enhancement
+    icon:           spell_nature_lightningshield.png
+    armory_id:      treeTwo
+    rank:           2
+  WowClassSpec_8_3:
+    wow_class_id:   WowClass_8
+    name:           Restoration
+    icon:           spell_nature_magicimmunity.png
+    armory_id:      treeThree
+    rank:           3
+
+  WowClassSpec_9_1:
+    wow_class_id:   WowClass_9
+    name:           Holy
+    icon:           spell_holy_holybolt.png
+    armory_id:      treeOne
+    rank:           1
+  WowClassSpec_9_2:
+    wow_class_id:   WowClass_9
+    name:           Protection
+    icon:           spell_holy_devotionaura.png
+    armory_id:      treeTwo
+    rank:           2
+  WowClassSpec_9_3:
+    wow_class_id:   WowClass_9
+    name:           Retribution
+    icon:           spell_holy_auraoflight.png
+    armory_id:      treeThree
+    rank:           3
+
+  WowClassSpec_10_1:
+    wow_class_id:   WowClass_10
+    name:           Blood
+    icon:           spell_deathknight_bloodpresence.png
+    armory_id:      treeOne
+    rank:           1
+  WowClassSpec_10_2:
+    wow_class_id:   WowClass_10
+    name:           Frost
+    icon:           spell_deathknight_frostpresence.png
+    armory_id:      treeTwo
+    rank:           2
+  WowClassSpec_10_3:
+    wow_class_id:   WowClass_10
+    name:           Unholy
+    icon:           spell_deathknight_unholypresence.png
+    armory_id:      treeThree
+    rank:           3
+  

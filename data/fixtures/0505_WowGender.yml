@@ -1,0 +1,8 @@
+WowGender:
+  male:
+    name: Male
+    armory_id: 0
+  female:
+    name: Female
+    armory_id: 1
+  

@@ -1,0 +1,93 @@
+WowRaceGenderIcon:
+
+  WowRaceGenderIcon_1_0:
+    wow_race_id:   WowRace_1
+    wow_gender_id: male
+    icon:          race_human_male.png
+  WowRaceGenderIcon_1_1:
+    wow_race_id:   WowRace_1
+    wow_gender_id: female
+    icon:          race_human_female.png
+
+  WowRaceGenderIcon_2_0:
+    wow_race_id:   WowRace_2
+    wow_gender_id: male
+    icon:          race_dwarf_male.png
+  WowRaceGenderIcon_2_1:
+    wow_race_id:   WowRace_2
+    wow_gender_id: female
+    icon:          race_dwarf_female.png
+
+  WowRaceGenderIcon_3_0:
+    wow_race_id:   WowRace_3
+    wow_gender_id: male
+    icon:          race_nightelf_male.png
+  WowRaceGenderIcon_3_1:
+    wow_race_id:   WowRace_3
+    wow_gender_id: female
+    icon:          race_nightelf_female.png
+
+  WowRaceGenderIcon_4_0:
+    wow_race_id:   WowRace_4
+    wow_gender_id: male
+    icon:          race_gnome_male.png
+  WowRaceGenderIcon_4_1:
+    wow_race_id:   WowRace_4
+    wow_gender_id: female
+    icon:          race_gnome_female.png
+
+  WowRaceGenderIcon_5_0:
+    wow_race_id:   WowRace_5
+    wow_gender_id: male
+    icon:          race_draenei_male.png
+  WowRaceGenderIcon_5_1:
+    wow_race_id:   WowRace_5
+    wow_gender_id: female
+    icon:          race_draenei_female.png
+
+    
+
+  WowRaceGenderIcon_6_0:
+    wow_race_id:   WowRace_6
+    wow_gender_id: male
+    icon:          race_orc_male.png
+  WowRaceGenderIcon_6_1:
+    wow_race_id:   WowRace_6
+    wow_gender_id: female
+    icon:          race_orc_female.png
+
+  WowRaceGenderIcon_7_0:
+    wow_race_id:   WowRace_7
+    wow_gender_id: male
+    icon:          race_undead_male.png
+  WowRaceGenderIcon_7_1:
+    wow_race_id:   WowRace_7
+    wow_gender_id: female
+    icon:          race_undead_female.png
+
+  WowRaceGenderIcon_8_0:
+    wow_race_id:   WowRace_8
+    wow_gender_id: male
+    icon:          race_tauren_male.png
+  WowRaceGenderIcon_8_1:
+    wow_race_id:   WowRace_8
+    wow_gender_id: female
+    icon:          race_tauren_female.png
+
+  WowRaceGenderIcon_9_0:
+    wow_race_id:   WowRace_9
+    wow_gender_id: male
+    icon:          race_troll_male.png
+  WowRaceGenderIcon_9_1:
+    wow_race_id:   WowRace_9
+    wow_gender_id: female
+    icon:          race_troll_female.png
+
+  WowRaceGenderIcon_10_0:
+    wow_race_id:   WowRace_10
+    wow_gender_id: male
+    icon:          race_bloodelf_male.png
+  WowRaceGenderIcon_10_1:
+    wow_race_id:   WowRace_10
+    wow_gender_id: female
+    icon:          race_bloodelf_female.png

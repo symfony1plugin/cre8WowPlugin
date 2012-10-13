@@ -1,0 +1,52 @@
+WowClass:
+  WowClass_1:
+    name:     Priest
+    short_name: Priest
+    armory_id:      5
+    icon:     class_priest.png
+  WowClass_2:
+    name:     Rogue
+    short_name: Rogue
+    icon:     class_rogue.png
+    armory_id:      4
+  WowClass_3:
+    name:     Warrior
+    short_name: Warrior
+    icon:     class_warrior.png
+    armory_id:      1
+  WowClass_4:
+    name:     Mage
+    short_name: Mage
+    icon:     class_mage.png
+    armory_id:      8
+  WowClass_5:
+    name:     Druid
+    short_name: Druid
+    icon:     class_druid.png
+    armory_id:      11
+  WowClass_6:
+    name:     Hunter
+    short_name: Hunter
+    icon:     class_hunter.png
+    armory_id:      3
+  WowClass_7:
+    name:     Warlock
+    short_name: Warlock
+    icon:     class_warlock.png
+    armory_id:      9
+  WowClass_8:
+    name:     Shaman
+    short_name: Shaman
+    icon:     class_shaman.png
+    armory_id:      7
+  WowClass_9:
+    name:     Paladin
+    short_name: Paladin
+    icon:     class_paladin.png
+    armory_id:      2
+  WowClass_10:
+    name:     Death Knight
+    short_name: DK
+    icon:     class_death_knight.png
+    armory_id:      6
+  

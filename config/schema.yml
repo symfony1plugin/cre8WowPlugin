@@ -1,0 +1,175 @@
+connection:           propel
+defaultIdMethod:      native
+package:              plugins.cre8WowPlugin.lib.model
+
+classes:
+
+  WowZone:
+    columns:
+      id:          ~
+      name:       { type: varchar(40), required: true, primaryString: true }
+
+  WowRealm:
+    columns:
+      id:          ~
+      wow_zone_id: { type: integer, foreignClass: WowZone, foreignReference: id, required: true, onDelete: cascade }
+      name:        { type: varchar(60), required: true, primaryString: true }
+  
+  WowFaction:
+    columns:
+      id:          ~
+      name:       { type: varchar(60), required: true, primaryString: true }
+      armory_id:  { type: integer, required: true, index: unique }
+      coat:       { type: varchar(60) }
+
+  WowRace:
+    columns:
+      id:          ~
+      wow_faction_id:    { type: integer, foreignClass: WowFaction, foreignReference: id, required: true, onDelete: cascade }
+      name:              { type: varchar(60), required: true, primaryString: true }
+      armory_id:         { type: integer, required: true, index: unique }
+      coat:              { type: varchar(60) }
+
+  WowClass:
+    columns:
+      id:          ~
+      name:       { type: varchar(60), required: true, primaryString: true }
+      icon:       { type: varchar(128), required: true }
+      armory_id:  { type: integer, required: true, index: unique }
+      short_name: { type: varchar(128), required: true }
+
+  WowClassSpec:
+    columns:
+      id:          ~
+      wow_class_id: { type: integer, foreignClass: WowClass, foreignReference: id, required: true, onDelete: cascade }
+      name:       { type: varchar(60), required: true, primaryString: true }
+      icon:       { type: varchar(128), required: true }
+      armory_id:  { type: varchar(60), required: true }
+      rank:       { type: integer, required: true }
+
+  WowGender:
+    columns:
+      id:          ~
+      name:       { type: varchar(60), required: true, primaryString: true }
+      armory_id:  { type: integer, required: true, index: unique }
+
+  WowRaceGenderIcon:
+    propel_behaviors:
+      symfony:
+        form:   false
+        filter: false
+    columns:
+      wow_race_id:      { type: integer, primaryKey: true, foreignClass: WowRace, foreignReference: id, required: true, onDelete: cascade }
+      wow_gender_id:    { type: integer, primaryKey: true, foreignClass: WowGender, foreignReference: id, required: true, onDelete: cascade }
+      icon:             { type: varchar(60), required: true }
+
+  WowCharacter:
+    propel_behaviors:
+      timestampable: ~
+    columns:
+      id:                ~
+      wow_zone_id:       { type: integer, foreignClass: WowZone, foreignReference: id, required: true, onDelete: cascade }
+      wow_realm_id:      { type: integer, foreignClass: WowRealm, foreignReference: id, required: true, onDelete: cascade }
+      wow_faction_id:    { type: integer, foreignClass: WowFaction, foreignReference: id, required: true, onDelete: cascade }
+      wow_race_id:       { type: integer, foreignClass: WowRace, foreignReference: id, required: true, onDelete: cascade }
+      wow_class_id:      { type: integer, foreignClass: WowClass, foreignReference: id, required: true, onDelete: cascade }
+      wow_gender_id:     { type: integer, foreignClass: WowGender, foreignReference: id, required: true, onDelete: cascade }
+      name:              { type: varchar(60), required: true, primaryString: true }
+      level:             { type: integer, required: true }
+      achievement_points: { type: integer, required: true }
+      source:            { type: longvarchar, required: true, lazyLoad: true }
+
+  WowCharacterClassSpec:
+    propel_behaviors:
+      timestampable: ~
+    columns:
+      id:                ~
+      wow_character_id:  { type: integer, foreignClass: WowCharacter, foreignReference: id, required: true, onDelete: cascade }
+      wow_class_spec_id: { type: integer, foreignClass: WowClassSpec, foreignReference: id, required: true, onDelete: cascade }
+      is_active:         { type: boolean, required: true, default: 0 }
+  
+  WowCharacterItem:
+    propel_behaviors:
+      timestampable: ~
+    columns:
+      id:                ~
+      wow_character_id:  { type: integer, foreignClass: WowCharacter, foreignReference: id, required: true, onDelete: cascade }
+      wow_item_id:       { type: integer, foreignClass: WowItem, foreignReference: id, required: true, onDelete: cascade }
+      slot:              { type: integer, required: true }
+      rank:              { type: integer, required: true }
+
+  WowCharacterItemGem:
+    columns:
+      id:                ~
+      wow_character_item_id:  { type: integer, foreignClass: WowCharacterItem, foreignReference: id, required: true, onDelete: cascade }
+      wow_item_id:            { type: integer, foreignClass: WowItem, foreignReference: id, required: true, onDelete: cascade }
+
+  WowCharacterItemEnchant:
+    columns:
+      id:                ~
+      wow_character_item_id:  { type: integer, foreignClass: WowCharacterItem, foreignReference: id, required: true, onDelete: cascade }
+      wow_item_id:            { type: integer, foreignClass: WowItem, foreignReference: id, required: true, onDelete: cascade }
+
+  WowProfession:
+    columns:
+      id:         { type: integer, required: true, primaryKey: true }
+      name:       { type: varchar(60), required: true, primaryString: true }
+      icon:       { type: varchar(128), required: true }
+      max_level:  { type: integer, required: true }
+      armory_id:  { type: varchar(60), required: true, index: unique }
+
+  WowCharacterProfession:
+    columns:
+      id:             ~
+      wow_character_id:  { type: integer, foreignClass: WowCharacter, foreignReference: id, required: true, onDelete: cascade }
+      wow_profession_id: { type: integer, foreignClass: WowProfession, foreignReference: id, required: true, onDelete: cascade }
+      level:             { type: integer, required: true }
+
+  WowGuild:
+    propel_behaviors:
+      timestampable: ~
+    columns:
+      id:             ~
+      wow_zone_id:    { type: integer, foreignClass: WowZone, foreignReference: id, required: true, onDelete: cascade }
+      wow_realm_id:   { type: integer, foreignClass: WowRealm, foreignReference: id, required: true, onDelete: cascade }
+      wow_faction_id: { type: integer, foreignClass: WowFaction, foreignReference: id, required: true, onDelete: cascade }
+      name:           { type: varchar(60), required: true, primaryString: true }
+
+  WowGuildRank:
+    columns:
+      id:            ~
+      wow_guild_id:  { type: integer, foreignClass: WowGuild, foreignReference: id, required: true, onDelete: cascade }
+      name:          { type: varchar(60), required: true, primaryString: true }
+      armory_id:     { type: integer, required: true }
+
+  WowItem:
+    propel_behaviors:
+      timestampable: ~
+    columns:
+      id:          { type: integer, required: true, primaryKey: true }
+      name:        { type: varchar(60), required: true, primaryString: true }
+      icon:        { type: varchar(128), required: true }
+      level:       { type: integer, required: true }
+      quality:     { type: tinyint, required: true }
+      armory_type: { type: varchar(60), required: true }
+      source:      { type: longvarchar, required: true, lazyLoad: true }
+
+  WowGuildMember:
+    propel_behaviors:
+      timestampable: ~
+    columns:
+      id:                ~
+      wow_guild_id:      { type: integer, foreignClass: WowGuild, foreignReference: id, required: true, onDelete: cascade }
+      wow_character_id:  { type: integer, foreignClass: WowCharacter, foreignReference: id, required: true, onDelete: cascade }
+      wow_guild_rank_id: { type: integer, foreignClass: WowGuildRank, foreignReference: id, required: true, onDelete: cascade }
+  
+  WowGuildMemberRole:
+    propel_behaviors:
+      symfony:
+        form:   false
+        filter: false
+    columns:
+      wow_guild_member_id:  { type: integer, primaryKey: true, foreignClass: WowGuildMember, foreignReference: id, required: true, onDelete: cascade }
+      wow_class_spec_id:    { type: integer, primaryKey: true, foreignClass: WowClassSpec, foreignReference: id, required: true, onDelete: cascade }
+
+  

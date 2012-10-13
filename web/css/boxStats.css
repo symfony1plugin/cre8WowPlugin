@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+.line_top {
+
+  background-image: url(/images/line_hor2.png);
+  background-repeat: repeat-x;
+  background-position: top;
+
+}
+.stats_holder {
+  clear: left;
+  float: left;
+  height: auto;
+  width: 100%;
+  padding-bottom: 30px;
+
+  }
+.stats_header {
+  line-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: #666;
+  font-size: 1.2em;
+}
+.stats_herb {
+  background-image: url(/images/stats/bg_stats.png);
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9em;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.stats_herbNum {
+  background-image: url(/images/stats/bg_stats.png);
+  line-height: 40px;
+  text-align: center;
+  color: #666;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.stats_classNum {
+  background-image: url(/images/stats/bg_class.png);
+  line-height: 35px;
+  text-align: center !important;
+  color: #666;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-repeat: no-repeat;
+
+  background-position: center center !important;
+}
+.stats_class_img {
+  text-align: center;
+}
+.stats_sex_img {
+  background-image: url(/images/stats/bg_sex.png);
+  text-align: center;
+  color: #666;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  width: 288px;
+  background-position: center center;
+  vertical-align: middle;
+  height: auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.stats_sex_img img {
+  padding-right: 13px;
+  padding-left: 13px;
+}

@@ -1,0 +1,78 @@
+WowProfession:
+
+  alchemy:
+    id:              171
+    name:            Alchemy
+    icon:            alchemy.png
+    max_level:       450
+    armory_id:       alchemy
+
+  herbalism:
+    id:              182
+    name:            Herbalism
+    icon:            herbalism.png
+    max_level:       450
+    armory_id:       herbalism
+
+  blacksmithing:
+    id:              164
+    name:            Blacksmithing
+    icon:            blacksmithing.png
+    max_level:       450
+    armory_id:       blacksmithing
+
+  mining:
+    id:              186
+    name:            Mining
+    icon:            mining.png
+    max_level:       450
+    armory_id:       mining
+
+  tailoring:
+    id:              197
+    name:            Tailoring
+    icon:            tailoring.png
+    max_level:       450
+    armory_id:       tailoring
+
+  enchanting:
+    id:              333
+    name:            Enchanting
+    icon:            enchanting.png
+    max_level:       450
+    armory_id:       enchanting
+
+  skinning:
+    id:              393
+    name:            Skinning
+    icon:            skinning.png
+    max_level:       450
+    armory_id:       skinning
+
+  jewelcrafting:
+    id:              755
+    name:            Jewelcrafting
+    icon:            jewelcrafting.png
+    max_level:       450
+    armory_id:       jewelcrafting
+
+  engineering:
+    id:              202
+    name:            Engineering
+    icon:            engineering.png
+    max_level:       450
+    armory_id:       engineering
+
+  leatherworking:
+    id:              165
+    name:            Leatherworking
+    icon:            leatherworking.png
+    max_level:       450
+    armory_id:       leatherworking
+
+  inscription:
+    id:              773
+    name:            Inscription
+    icon:            inscription.png
+    max_level:       450
+    armory_id:       inscription

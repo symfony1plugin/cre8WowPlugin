@@ -1,0 +1,52 @@
+WowRace:
+
+# ALLIANCE:
+  WowRace_1:
+    name:           Human
+    wow_faction_id: alliance
+    armory_id:      1
+    coat:           coat_race_human.png
+  WowRace_2:
+    name:           Dwarf
+    wow_faction_id: alliance
+    armory_id:      3
+    coat:           coat_race_dwarf.png
+  WowRace_3:
+    name:           Night Elf
+    wow_faction_id: alliance
+    armory_id:      4
+    coat:           coat_race_night_elf.png
+  WowRace_4:
+    name:           Gnome
+    wow_faction_id: alliance
+    armory_id:      7
+    coat:           coat_race_gnome.png
+  WowRace_5:
+    name:           Draenei
+    wow_faction_id: alliance
+    armory_id:      11
+    coat:           coat_race_draenei.png
+
+# HORDE:
+  WowRace_6:
+    name:           Orc
+    wow_faction_id: horde
+    armory_id:      2
+  WowRace_7:
+    name:           Undead
+    wow_faction_id: horde
+    armory_id:      5
+  WowRace_8:
+    name:           Tauren
+    wow_faction_id: horde
+    armory_id:      6
+  WowRace_9:
+    name:           Troll
+    wow_faction_id: horde
+    armory_id:      8
+  WowRace_10:
+    name:           Blood Elf
+    wow_faction_id: horde
+    armory_id:      10
+  
+

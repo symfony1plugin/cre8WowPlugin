@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+.table_header{
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 30px;
+  background-color: #0C0C0C;
+  font-size: 0.9em;
+  background-image: url(/images/tables_header.png);
+  text-align: center;
+}
